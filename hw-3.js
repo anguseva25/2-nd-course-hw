@@ -29,7 +29,7 @@ if (d > 100 || e > 100) {
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже : 
-alert(number(a + b));
+alert(Number(a) + Number(b));
 
 // задание 5
 let monthNumber = 12;
