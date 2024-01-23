@@ -72,7 +72,7 @@
         }
     }
 
-    .heading__link-link {
+    .heading__link-start {
         display: flex;
         color: #FFF;
         justify-content: center;
@@ -108,7 +108,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            transition: all 0.5s;
+            transition: all 0.8s;
+            box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
             box-sizing: border-box;
@@ -119,7 +120,7 @@
             padding-left: 20px;
 
             :hover {
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
         }
 
@@ -134,7 +135,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            transition: all 0.5s;
+            transition: all 0.8s;
+            box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
             box-sizing: border-box;
@@ -145,7 +147,7 @@
             padding-left: 20px;
 
             :hover {
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
         }
 
@@ -160,7 +162,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            transition: all 0.5s;
+            transition: all 0.8s;
+            box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
             box-sizing: border-box;
@@ -171,7 +174,7 @@
             padding-left: 20px;
 
             :hover {
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
         }
 

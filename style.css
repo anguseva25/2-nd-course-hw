@@ -64,7 +64,7 @@ body {
   display: none;
 }
 
-.heading__link-link {
+.heading__link-start {
   display: flex;
   color: #FFF;
   justify-content: center;
@@ -225,7 +225,7 @@ footer {
   .heading__menu_mobile {
     display: flex;
   }
-  .heading__link-link {
+  .heading__link-start {
     display: flex;
     color: #FFF;
     justify-content: center;
@@ -259,7 +259,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 0.5s;
+    transition: all 0.8s;
+    box-shadow: #FFF;
     align-items: flex-end;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -270,7 +271,7 @@ footer {
     padding-left: 20px;
   }
   .select-game__choice1 :hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   .select-game__choice2 {
     display: flex;
@@ -283,7 +284,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 0.5s;
+    transition: all 0.8s;
+    box-shadow: #FFF;
     align-items: flex-end;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -294,7 +296,7 @@ footer {
     padding-left: 20px;
   }
   .select-game__choice2 :hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   .select-game__choice3 {
     display: flex;
@@ -307,7 +309,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 0.5s;
+    transition: all 0.8s;
+    box-shadow: #FFF;
     align-items: flex-end;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -318,6 +321,6 @@ footer {
     padding-left: 20px;
   }
   .select-game__choice3 :hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 }/*# sourceMappingURL=style.css.map */
