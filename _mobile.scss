@@ -5,7 +5,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -60,6 +60,8 @@
             border-radius: 30px;
             background: #9C0332;
             transition: all 0.5s;
+            // display: flex;
+            // align-items: center;
             padding-left: 70px;
             padding-right: 70px;
             display: flex;
@@ -67,7 +69,7 @@
             align-items: center;
         }
 
-        &__link:hover {
+        .heading__link:hover {
             transform: scale(1.02);
             background-color: #191970;
             border-radius: 30px;
@@ -104,7 +106,7 @@
         padding-left: 16px;
         transition: all 0.8s;
 
-        :hover {
+        &:hover {
             transform: scale(1.03);
         }
 
@@ -119,6 +121,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            transition: all 0.8s;
             box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
@@ -128,6 +131,10 @@
             font-size: 20px;
             font-weight: 600;
             padding-left: 20px;
+        }
+
+        .select-game__choice1:hover {
+            transform: scale(1.03);
         }
 
 
@@ -142,6 +149,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            transition: all 0.8s;
             box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
@@ -152,6 +160,11 @@
             font-weight: 600;
             padding-left: 20px;
         }
+
+        .select-game__choice2:hover {
+            transform: scale(1.03);
+        }
+
 
         &__choice3 {
             display: flex;
@@ -164,6 +177,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            transition: all 0.8s;
             box-shadow: #FFF;
             align-items: flex-end;
             padding-bottom: 20px;
@@ -173,6 +187,10 @@
             font-size: 20px;
             font-weight: 600;
             padding-left: 20px;
+        }
+
+        .select-game__choice3:hover {
+            transform: scale(1.03);
         }
 
     }
