@@ -5,11 +5,25 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
     }
+}
+
+@media (max-width: 768px) {
+    .center{
+    padding-left: calc(50% - 350px);
+    padding-right: calc(50% - 350px);
+    }
+}
+
+    @media (max-width: 767px) {
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
 
     .heading {
         display: flex;

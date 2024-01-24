@@ -9,6 +9,7 @@ body {
 
 .center {
   padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -54,7 +55,7 @@ body {
   background: #9C0332;
   transition: all 0.5s;
 }
-.heading__link :hover {
+.heading__link:hover {
   transform: scale(1.02);
   background-color: #191970;
   border-radius: 30px;
@@ -79,6 +80,7 @@ body {
 
 footer {
   padding-top: 440px;
+  background: #000915;
 }
 
 .select-game {
@@ -88,9 +90,16 @@ footer {
   gap: 32px;
   justify-content: center;
 }
+.select-game__choice {
+  transition: all 0.8s;
+}
+.select-game__choice:hover {
+  transform: scale(1.03);
+}
 .select-game__choice1 {
   width: 378px;
   display: flex;
+  max-width: 378px;
   flex-direction: row;
   row-gap: 32px;
   height: 300px;
@@ -109,7 +118,7 @@ footer {
   font-weight: 600;
   padding-left: 20px;
 }
-.select-game__choice1 :hover {
+.select-game__choice1:hover {
   transform: scale(1.02);
 }
 .select-game__choice2 {
@@ -117,6 +126,7 @@ footer {
   flex-direction: row;
   row-gap: 32px;
   height: 300px;
+  max-width: 378px;
   width: 378px;
   border-radius: 16px;
   background-image: url(img/game2.jpg);
@@ -141,6 +151,7 @@ footer {
   flex-direction: row;
   row-gap: 32px;
   width: 378px;
+  max-width: 378px;
   height: 300px;
   border-radius: 16px;
   background-image: url(img/game3.jpg);
@@ -161,6 +172,24 @@ footer {
   transform: scale(1.02);
 }
 
+@media (max-width: 1439px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+}
+@media (max-width: 768px) {
+  .center {
+    padding-left: calc(50% - 350px);
+    padding-right: calc(50% - 350px);
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -216,7 +245,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .heading__link :hover {
+  .heading__link:hover {
     transform: scale(1.02);
     background-color: #191970;
     border-radius: 30px;
@@ -246,6 +275,10 @@ footer {
     flex-direction: column;
     gap: 32px;
     padding-left: 16px;
+    transition: all 0.5s;
+  }
+  .select-game:hover {
+    transform: scale(1.02);
   }
   .select-game__choice1 {
     max-width: 342px;
@@ -268,7 +301,7 @@ footer {
     font-weight: 600;
     padding-left: 20px;
   }
-  .select-game__choice1 :hover {
+  .select-game__choice1:hover {
     transform: scale(1.02);
   }
   .select-game__choice2 {
@@ -292,7 +325,7 @@ footer {
     font-weight: 600;
     padding-left: 20px;
   }
-  .select-game__choice2 :hover {
+  .select-game__choice2:hover {
     transform: scale(1.02);
   }
   .select-game__choice3 {
@@ -316,7 +349,7 @@ footer {
     font-weight: 600;
     padding-left: 20px;
   }
-  .select-game__choice3 :hover {
+  .select-game__choice3:hover {
     transform: scale(1.02);
   }
 }/*# sourceMappingURL=style.css.map */

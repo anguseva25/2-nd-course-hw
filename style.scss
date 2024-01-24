@@ -9,6 +9,7 @@ body {
 
 .center{
     padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -66,7 +67,7 @@ body {
         background: #9C0332;
         transition: all 0.5s;
 
-        :hover {
+        &:hover {
             transform: scale(1.02);
             background-color: #191970;
             border-radius: 30px;
@@ -94,6 +95,7 @@ body {
 
 footer {
     padding-top: 440px;
+    background: #000915;
 }
 
 .select-game {
@@ -103,10 +105,18 @@ footer {
     gap: 32px;
     justify-content: center;
 
+    &__choice{
+    transition: all 0.8s;
+
+    &:hover {
+    transform: scale(1.03);
+    }
+    }
+
     &__choice1 {
         width: 378px;
         display: flex;
-        // max-width: 378px;
+        max-width: 378px;
         flex-direction: row;
         row-gap: 32px;
         height: 300px;
@@ -126,7 +136,7 @@ footer {
         // padding-left: 32px;
         padding-left: 20px;
 
-        :hover {
+        &:hover {
             transform: scale(1.02);
         }
     }
@@ -136,7 +146,7 @@ footer {
         flex-direction: row;
         row-gap: 32px;
         height: 300px;
-        // max-width: 378px;
+        max-width: 378px;
         width: 378px;
         border-radius: 16px;
         background-image: url(img/game2.jpg);
@@ -164,7 +174,7 @@ footer {
         flex-direction: row;
         row-gap: 32px;
         width: 378px;
-        // max-width: 378px;
+        max-width: 378px;
         height: 300px;
         border-radius: 16px;
         background-image: url(img/game3.jpg);
