@@ -108,7 +108,7 @@ footer {
     :hover {
         transform: scale(1.02);
         background-color: #191970;
-}
+    }
 
     &__choice1 {
         width: 45%;
@@ -122,7 +122,6 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -132,10 +131,6 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
-
-        :hover {
-            transform: scale(1.02);
-        }
     }
 
     &__choice2 {
@@ -150,7 +145,6 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -160,10 +154,6 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
-
-        :hover {
-            transform: scale(1.02);
-        }
     }
 
     &__choice3 {
@@ -178,7 +168,6 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -188,10 +177,6 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
-
-        :hover {
-            transform: scale(1.02);
-        }
     }
 
     // &__name {
