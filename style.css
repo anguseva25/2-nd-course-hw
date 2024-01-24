@@ -88,9 +88,14 @@ footer {
   display: flex;
   gap: 32px;
   justify-content: center;
+  transition: all 0.5s;
+}
+.select-game :hover {
+  transform: scale(1.02);
+  background-color: #191970;
 }
 .select-game__choice1 {
-  width: 378px;
+  width: 45%;
   display: flex;
   flex-direction: row;
   row-gap: 32px;
@@ -118,7 +123,7 @@ footer {
   flex-direction: row;
   row-gap: 32px;
   height: 300px;
-  width: 378px;
+  width: 45%;
   border-radius: 16px;
   background-image: url(img/game2.jpg);
   background-repeat: no-repeat;
@@ -141,7 +146,7 @@ footer {
   display: flex;
   flex-direction: row;
   row-gap: 32px;
-  width: 378px;
+  width: 45%;
   height: 300px;
   border-radius: 16px;
   background-image: url(img/game3.jpg);
@@ -162,6 +167,12 @@ footer {
   transform: scale(1.02);
 }
 
+@media (max-width: 1439px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;

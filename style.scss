@@ -103,9 +103,15 @@ footer {
     display: flex;
     gap: 32px;
     justify-content: center;
+    transition: all 0.5s;
+
+    :hover {
+        transform: scale(1.02);
+        background-color: #191970;
+}
 
     &__choice1 {
-        width: 378px;
+        width: 45%;
         display: flex;
         // max-width: 378px;
         flex-direction: row;
@@ -138,7 +144,7 @@ footer {
         row-gap: 32px;
         height: 300px;
         // max-width: 378px;
-        width: 378px;
+        width: 45%;
         border-radius: 16px;
         background-image: url(img/game2.jpg);
         background-repeat: no-repeat;
@@ -164,7 +170,7 @@ footer {
         display: flex;
         flex-direction: row;
         row-gap: 32px;
-        width: 378px;
+        width: 45%;
         // max-width: 378px;
         height: 300px;
         border-radius: 16px;
