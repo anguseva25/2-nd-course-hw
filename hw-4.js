@@ -5,7 +5,7 @@ while (i <= 2) {
 }
 
 // Задание 2
-let w = 0;
+let w = 1;
 do {
     console.log(w);
     w++;
@@ -32,15 +32,15 @@ for (let key in obj) {
 
 // Задание 5
 let n = 1000;
-let result = Number(n / 2);
 let num = 0;
-do {
-    result = n / 2
-    ++num
+while (n>=50) {
+    n = n /= 2;
+    num++;
 }
-while (result >= 50)
 console.log(`количество итераций ${num}`)
-console.log(`финальное число в ходе деления ${result}`)
+console.log(`финальное число в ходе деления ${v}`)
+
+
 
 // Задание 6
 let currentDay = 0 // первый день месяца
