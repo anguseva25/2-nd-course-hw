@@ -7,7 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.center{
+.center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
@@ -73,10 +73,11 @@ body {
             border-radius: 30px;
         }
     }
-        &__menu_mobile{
-            display: none;
 
-        }
+    &__menu_mobile {
+        display: none;
+
+    }
 }
 
 .heading__link-start {
