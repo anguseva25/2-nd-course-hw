@@ -67,7 +67,7 @@ body {
         background: #9C0332;
         transition: all 0.5s;
 
-        :hover {
+        &:hover {
             transform: scale(1.02);
             background-color: #191970;
             border-radius: 30px;
@@ -80,7 +80,7 @@ body {
     }
 }
 
-.heading__link-start {
+.heading__link-link {
     display: flex;
     color: #FFF;
     justify-content: center;
@@ -96,6 +96,7 @@ body {
 
 footer {
     padding-top: 440px;
+    background: #000915;
 }
 
 .select-game {
@@ -105,17 +106,19 @@ footer {
     gap: 32px;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
 
-    :hover {
-        transform: scale(1.02);
-        background-color: #191970;
+    &__choice{
+    transition: all 0.8s;
+
+    &:hover {
+    transform: scale(1.03);
+    }
     }
 
     &__choice1 {
-        width: 45%;
+        width: 378px;
         display: flex;
-        // max-width: 378px;
+        max-width: 378px;
         flex-direction: row;
         row-gap: 32px;
         height: 300px;
@@ -124,6 +127,7 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -133,6 +137,10 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 
     &__choice2 {
@@ -140,13 +148,14 @@ footer {
         flex-direction: row;
         row-gap: 32px;
         height: 300px;
-        // max-width: 378px;
-        width: 45%;
+        max-width: 378px;
+        width: 378px;
         border-radius: 16px;
         background-image: url(img/game2.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -156,20 +165,25 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
+
+        :hover {
+            transform: scale(1.02);
+        }
     }
 
     &__choice3 {
         display: flex;
         flex-direction: row;
         row-gap: 32px;
-        width: 45%;
-        // max-width: 378px;
+        width: 378px;
+        max-width: 378px;
         height: 300px;
         border-radius: 16px;
         background-image: url(img/game3.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: all 0.5s;
         align-items: flex-end;
         padding-bottom: 20px;
         box-sizing: border-box;
@@ -179,6 +193,10 @@ footer {
         font-weight: 600;
         // padding-left: 32px;
         padding-left: 20px;
+
+        :hover {
+            transform: scale(1.02);
+        }
     }
 
     // &__name {
