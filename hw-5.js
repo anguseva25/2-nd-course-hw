@@ -25,3 +25,10 @@ function value(n) {
 }
 let question1 = console.log(value(121));
 
+//Задание 4
+function ask(r){
+    return (r !== 0 && r <=12) ? ('«Привет, друг!»') : ('Добро пожаловать')
+}
+let result3 = console.log(ask(prompt('Введите возраст')));
+
+//Задание 5
