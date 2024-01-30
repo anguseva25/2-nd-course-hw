@@ -26,9 +26,32 @@ function value(n) {
 let question1 = console.log(value(121));
 
 //Задание 4
-function ask(r){
-    return (r !== 0 && r <=12) ? ('«Привет, друг!»') : ('Добро пожаловать')
+function ask(r) {
+    return (r !== 0 && r <= 12) ? ('«Привет, друг!»') : ('Добро пожаловать')
 }
 let result3 = console.log(ask(prompt('Введите возраст')));
 
 //Задание 5
+function theNumbers(p, k) {
+    return !(isNaN(Number(p)) || isNaN(Number(k))) ? Number(p * k) : 'Одно или оба значения не являются числом'
+}
+let result4 = console.log(theNumbers(8, 9));
+let result5 = console.log(theNumbers(13, 't'));
+
+//Задание 6
+function cubeValue(n = prompt('введите число от 0 до 10')) {
+    return (n === Number(n) || n === 0) ? Number(n ** 3) : 'Переданный параметр не является числом'
+}
+let result6 = console.log(`${cubeValue(n)} в кубе равняется ${n}`)
+
+//Задание 7
+const circle1 = {
+    radius: 7,
+    getArea: returnSquareCirleViaRadius,
+    getPerimeter: returnCirlePerimetre,
+}
+const circle2 = {
+    radius: 5,
+    getArea2: returnSquareCirleViaRadius2,
+    getPerimeter2: returnCirlePerimetre2,
+}
