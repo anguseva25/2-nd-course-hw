@@ -39,12 +39,24 @@ let result4 = console.log(theNumbers(8, 9));
 let result5 = console.log(theNumbers(13, 't'));
 
 //Задание 6
-function cubeValue(n = prompt('введите число от 0 до 10')) {
-    return (n === Number(n) || n === 0) ? Number(n ** 3) : 'Переданный параметр не является числом'
+function cubeValue () {
+    let n = Number(prompt('введите число от 0 до 10'));
+    if (isNaN(n) || n === 0) {
+        return 'Переданный параметр не является числом';
+} else {
+    return Number(n ** 3);
 }
-let result6 = console.log(`${cubeValue(n)} в кубе равняется ${n}`)
+}
+console.log(cubeValue());
 
 //Задание 7
+function returnSquareCirleViaRadius (){
+    return Math.PI * Math.pow(this.radius, 2);
+}
+
+function returnCirlePerimetre (){
+    return 2 * Math.PI * this.radius;
+}
 const circle1 = {
     radius: 7,
     getArea: returnSquareCirleViaRadius,
@@ -52,6 +64,6 @@ const circle1 = {
 }
 const circle2 = {
     radius: 5,
-    getArea2: returnSquareCirleViaRadius2,
-    getPerimeter2: returnCirlePerimetre2,
+    getArea: returnSquareCirleViaRadius,
+    getPerimeter: returnCirlePerimetre,
 }
