@@ -23,42 +23,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    .seasons{
-    &__description-seasons {
-        max-width: 584px;
-        width: 100%;
-        padding-right: 190px;
-        padding-top: 242px;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 12px;
-        display: none;
-    }
-    .heading__description{
-        display: none;
-    }
-
-    &__caption {
-        color: #FFF;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 48px;
-        padding-top: 80px;
-        margin-bottom: 32px;
-    }
-
-    &__heading__description-mob {
-        width: 100%;
-        padding-right: 190px;
-        padding-top: 242px;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 12px;
-        color: #FFF;
-    }    
+    
 }
 @media (max-width: 768px) {
     .center {
@@ -253,54 +218,7 @@
             transform: scale(1.03);
         }
 
-    }
-
-    .seasons {
-        background: #000915;
-        display: flex;
-        height: 800px;
-    
-        &__description-seasons {
-            max-width: 584px;
-            width: 100%;
-            padding-right: 190px;
-            padding-top: 242px;
-            font-size: 44px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 12px;
-            display: none;
-        }
-    
-        &__caption {
-            color: #FFF;
-            font-size: 44px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 48px;
-            padding-top: 80px;
-            margin-bottom: 32px;
-        }
-    
-        &__heading__description-mob {
-            width: 100%;
-            padding-right: 190px;
-            padding-top: 242px;
-            font-size: 44px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 12px;
-            color: #FFF;
-        }
-    
-        &__image {
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-    }    
+    }  
 }
 
 @media (max-width: 375px) {

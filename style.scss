@@ -218,6 +218,14 @@ body {
         margin-bottom: 32px;
     }
 
+    &__heading__description{
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
     &__heading__description-mob {
         display: none;
     }
