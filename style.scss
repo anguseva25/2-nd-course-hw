@@ -94,8 +94,9 @@ body {
     font-family: inherit;
 }
 
-footer {
+.section-choice {
     padding-top: 440px;
+    border: transparent;
 }
 
 .select-game {
@@ -196,6 +197,162 @@ footer {
     //     // padding-left: 32px;
     //     text-decoration: none;
     // }
+}
+
+.seasons {
+    background: #000915;
+    display: flex;
+    height: 800px;
+
+    &__description-seasons {
+        max-width: 584px;
+        width: 100%;
+        padding-right: 190px;
+        padding-top: 242px;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+    }
+
+    &__caption {
+        color: #FFF;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        padding-top: 80px;
+        margin-bottom: 32px;
+    }
+
+    &__heading__description-mob {
+        display: none;
+    }
+
+    &__image {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.remember {
+    background: #000915;
+    display: flex;
+    height: 800px;
+
+    &__description-remember {
+        max-width: 588px;
+        width: 100%;
+        padding-left: 78px;
+        padding-top: 242px;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        padding-top: 80px;
+        margin-bottom: 32px;
+
+    }
+
+    &__heading__description-mob {
+        display: none;
+    }
+
+    &__image-reverse {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-direction: row-reverse;
+    }
+}
+
+.riddle-game{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(1 2 14) 0%, rgb(1 5 25) 99.4%);
+    background-image: url(img/game-phone.jpg);
+	opacity: 0.8;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title{
+        color: #FFF;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        padding-top: 80px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__description-riddle {
+        padding-left: 78px;
+        padding-top: 150px;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align-last: center;
+    }
+
+    &__link {
+        max-width: 234px;
+        margin-top: 44px;
+        border-radius: 30px;
+        background: #9C0332;
+        transition: all 0.5s;
+
+        :hover {
+            transform: scale(1.02);
+            background-color: #191970;
+            border-radius: 30px;
+        }
+    }
+
+    &__link-start {
+        display: flex;
+        color: #FFF;
+        justify-content: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 36px;
+        text-decoration: none;
+        padding-top: 12px;
+        font-family: inherit;
+    }
+}
+
+.rules{
+    height: 80px;
+    text-align: center;
+    color: #FFF;
+    background-color: #000915;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 @import 'mobile';
