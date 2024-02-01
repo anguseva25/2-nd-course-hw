@@ -3,6 +3,14 @@
         padding-left: calc(50% - 786px/2);
         padding-right: calc(50% - 786px/2);
     }
+    .riddle-game__link {
+        max-width: 234px;
+        margin-top: 44px;
+        border-radius: 30px;
+        background: #9C0332;
+        transition: all 0.5s;
+        margin-left: 480px;
+}
 }
 
 @media (max-width: 768px) {
