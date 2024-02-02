@@ -402,4 +402,65 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .heading__main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 28px;
+    max-width: 750px;
+    text-align: center;
+  }
+  .heading__header center {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .heading__description {
+    display: none;
+  }
+  .heading__menu_mobile {
+    display: flex;
+  }
+  .heading__description-mob {
+    text-align: center;
+    color: #FFF;
+    margin-left: 20px;
+  }
+  .heading {
+    padding-bottom: 80px;
+  }
+  .seasons {
+    flex-direction: column;
+  }
+  .select-game {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading__link {
+    margin-left: 45px;
+  }
+  .select-game__choice1 {
+    width: 86%;
+    height: 94%;
+  }
+  .select-game__choice2 {
+    width: 86%;
+    height: 94%;
+  }
+  .select-game__choice3 {
+    width: 86%;
+    height: 94%;
+  }
+  .seasons__description-seasons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .seasons__image {
+    padding-left: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
