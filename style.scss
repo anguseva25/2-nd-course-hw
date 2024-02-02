@@ -226,7 +226,7 @@ body {
         line-height: 32px;
     }
 
-    &__heading__description-mob {
+    &__heading__desc-mob {
         display: none;
     }
 
@@ -266,7 +266,15 @@ body {
 
     }
 
-    &__heading__description-mob {
+    &__heading__description{
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    &__heading__desc-mob {
         display: none;
     }
 
@@ -314,6 +322,22 @@ body {
         display: flex;
         flex-direction: column;
         text-align-last: center;
+    }
+
+    &__description{
+        color: white;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align-last: center;
+    }
+
+    &__heading__desc-mob{
+        display: none;
     }
 }
 .riddle-game__link{
