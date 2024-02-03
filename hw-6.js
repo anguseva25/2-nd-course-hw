@@ -21,6 +21,19 @@ const t = [
 ];
 
 
+let arr1 = [1, 1, 1];
+let mainArray
+for (let i = 0; i < 1; i++)
+{
+arr[i] = [];
+for (let j = 0; j <= i; j++)
+{
+arr[i][j] = j + 1;
+}
+}
+console.log(arr);
+
+
 const t = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
 // Задание 5
@@ -36,6 +49,9 @@ console.log(e);
 
 let x = 'привет=как=дела';
 x = x.split('=');
+const age = [11, 18, 20, 78, 32, 67, 98, 1, 27, 8, 9];
+const result = age.filter(item => item >= 12);
+console.log(result);
 
 // Задание 11 (нужен reduce для суммы массива видео 5)
 

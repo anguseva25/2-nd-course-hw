@@ -1,14 +1,14 @@
 // Игра 1
-const monthNumber = prompt('Введите число от 1 до 12, и я назову время года')
 function guessSeason(){
+    const monthNumber = Number(prompt('Введите число от 1 до 12, и я назову время года'))
     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
-        return 'Это зима"';
+        alert('Это зима');
     } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
-        return 'Это весна"';
+        alert ('Это весна');
     } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
-        return 'Это лето"';
+        alert('Это лето');
     } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
-        return 'Это осень"';
+        alert('Это осень');
     }
 }
 
