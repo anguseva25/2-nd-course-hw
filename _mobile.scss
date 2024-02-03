@@ -18,6 +18,11 @@
         padding-top: 180px;
     }
 
+    .parametres-tablet-remember {
+        max-width: 350px;
+        padding-top: 180px;
+    }
+
     .seasons {
         &__heading__description {
             font-size: 14px;
@@ -70,6 +75,11 @@
     }
 
     .parametres-tablet {
+        max-width: 300px;
+        padding-top: 120px;
+    }
+
+    .parametres-tablet-remember {
         max-width: 300px;
         padding-top: 120px;
     }
@@ -195,7 +205,7 @@
     }
 
     .remember__description-remember {
-        padding-left: 28px;
+        padding-left: 20px;
     }
 
     .remember__heading__desc-mob {
@@ -203,7 +213,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 200;
-        line-height: 18px;
+        line-height: 14px;
         display: flex;
         // padding-left: 20px;
         text-align: center;
@@ -226,13 +236,22 @@
 
     .remember__title {
         font-size: 36px;
+        padding-left: 10px;
     }
 
     .parametres-tablet {
         max-height: 360px;
-        padding-left: 8px;
-        max-width: 320px;
+        // padding-left: 8px;
+        // max-width: 320px;
         padding-top: 5px;
+    }
+
+    .parametres-tablet-remember {
+        max-height: 360px;
+        /* padding-left: 8px; */
+        /* max-width: 320px; */
+        padding-top: 5px;
+        max-width: 100%;
     }
 
     .riddle-game__title {
