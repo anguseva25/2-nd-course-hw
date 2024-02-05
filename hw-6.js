@@ -36,8 +36,9 @@ console.log(arrayOrigine);
 
 // Задание 7
 const array = [9, 8, 7, 6, 5]
-const checkedArray = array.includes(Number(prompt('угадайте число от 1 до 10, которое содержится в загаданном массиве')));
-console.log(alert(checkedArray))
+if (array.includes(Number(prompt('угадайте число от 1 до 10, которое содержится в загаданном массиве'))))
+    console.log(alert('угадал'));
+else console.log(alert('не угадал'));
 
 
 // Задание 8
@@ -52,20 +53,41 @@ let wordNewAlphabet = reverseAlphabet.join('')
 console.log(wordNewAlphabet);
 
 // Задание 9
+let origineArray = [[1, 2, 3,], [4, 5, 6]] // Выведите в консоль массив вида: [1, 2, 3, 4, 5, 6]
+const newArr = [];
+for (let el of origineArray) newArr.push(...el);
+console.log(newArr);
+
 // Задание 10
+const numbersMyArray = [7, 8, 9, 3, 5, 2]
+for (let index = 0; index < (numbersMyArray.length - 1); index++)
+    console.log(numbersMyArray[index] + numbersMyArray[index+1]);
+
 // Задание 11
+let box = [8, 9, 2, 4, 3, 5, 1]
+let boxQuadro = box.map(item => (item**2))
+console.log(boxQuadro);
+
 // Задание 12
+const word =['слово', '', 'слог', 'длинное предложение', 'буква']; // [5, 0, 4, 19, 5]
+function getLengthWord(word){
+    return word.map(el => el.length)
+}
+console.log(getLengthWord(word));
+
 // Задание 13
+function filterPositive(array) {
+    const negativeArray = [-1, 0, 5, -10, 56];
+    return negativeArray.filter (item => (item <0));
+  }
+  console.log(filterPositive());
 
-let x = 'привет=как=дела';
-x = x.split('=');
-const age = [11, 18, 20, 78, 32, 67, 98, 1, 27, 8, 9];
-const result = age.filter(item => item >= 12);
-console.log(result);
+  function filterPositive2(array) {
+    const negativeArray2 = [-25, 25, 0, -1000, -2]
+    return negativeArray2.filter (item => (item <0));
+  }
+  console.log(filterPositive2());
 
-// Задание 11 (нужен reduce для суммы массива видео 5)
-
-// Задание 11 (нужен map видео 5)
-let mass = [178, 53, 42, 960, 4, 21, 45, 67, 98, 171]
-function price 
-    return (item)
+  
+  //filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+  //filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
