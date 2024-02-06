@@ -1,8 +1,8 @@
 // Задание 1
 const numbs = [1, 5, 4, 10, 0, 3]
 for (let i = 0; i < numbs.length; i++) {
-    if (numbs[i] === 10) break;
     console.log(numbs[i]);
+    if (numbs[i] === 10) break;
 }
 
 // Задание 2
@@ -31,8 +31,8 @@ console.log(addNumbers)
 
 // Задание 6
 let arrayOrigine = [9, 8, 7, 'a', 6, 5]
-const newArray = arrayOrigine.splice(3, 1)
-console.log(arrayOrigine);
+const newArray = arrayOrigine.filter(item => (typeof item !== 'string' ))
+console.log(newArray.sort());
 
 // Задание 7
 const array = [9, 8, 7, 6, 5]
@@ -76,17 +76,14 @@ function getLengthWord(word){
 console.log(getLengthWord(word));
 
 // Задание 13
+const negativeArray = [-1, 0, 5, -10, 56];
+const negativeArray2 = [-25, 25, 0, -1000, -2];
 function filterPositive(array) {
-    const negativeArray = [-1, 0, 5, -10, 56];
-    return negativeArray.filter (item => (item <0));
+    return array.filter (item => (item <0));
   }
-  console.log(filterPositive());
+  console.log(filterPositive(negativeArray));
+  console.log(filterPositive(negativeArray2))
 
-  function filterPositive2(array) {
-    const negativeArray2 = [-25, 25, 0, -1000, -2]
-    return negativeArray2.filter (item => (item <0));
-  }
-  console.log(filterPositive2());
 
   
   //filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
