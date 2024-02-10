@@ -12,30 +12,23 @@ console.log(newString1 = smile.toLowerCase());
 
 
 // Задание 2 >>>>>>>>>>>>
-const searchStart = (['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-
 // const searchStart = ([]; String())
-const searchStart = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
-searchStart[0].forEach(thing) => {
-    if (thing.toLowerCase().includes(search.toLowerCase())) {
-        console.log(thing);
-    }
-})
 
+const searchStart = (words, prefix ) => {
+return words.filter(word => word.toLowerCase().includes(prefix.toLowerCase()))
+}
+
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-const search = 'гру';
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
-const search = '';
 
-
-const products = ['Хлеб Бородинский', 'Молоко Молочник', 'Коровка Молоко', 'Груша Конференция'];
-const search = 'молоко';
-products.forEach((product) => {
-    if (product.toLowerCase().includes(search.toLowerCase())) {
-        console.log(product);
-    }
-});// в результате будет выведено 'Молоко Молочник', 'Коровка Молоко'
+// const searchStart = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+// const search = 'ко';
+// searchStart[0].forEach(thing) => {
+//     if (thing.toLowerCase().includes(search.toLowerCase())) {
+//         console.log(thing);
+//     }
+// }
 
 
 
@@ -48,8 +41,6 @@ console.log(Math.floor(32.58884));
 console.log(Math.ceil(32.58884));
 // До ближайшего целого
 console.log(Math.round(32.58884))
-
-
 
 
 
@@ -75,28 +66,19 @@ function anyNumber(minU, maxW) {
 console.log(anyNumber(x, y))
 
 
-
-
 // Задание 6 >>>>>>>>>>>>
-maxArr2 =
-    minArr2 = 
-const arrayN = []
-for (let i = 0; i < Math.round(Math.random() * 12); i++) {
-    arrayN[i] = Math.round(Math.random());
+const getRandomArrNumbers = (randomNumbers) => {
+    const arrayN = [];
+    for (let i = 0; i < Math.floor(randomNumbers / 2); i++) {
+        arrayN.push(Math.round(Math.random() * randomNumbers));
 }
-console.log(arrayN);
-
-function getRandomArrNumbers(array) {
-    return Math.random(u, w) * (u - w) + w;
+return arrayN;
 }
-
-
 getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами
-// от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего
+// от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего (!) меньшего
 // числа, получаем 3
 getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами
 // от 0 до 12, длина массива 12 / 2 = 6
-
 
 
 
@@ -122,19 +104,13 @@ let searchDate = +CurrentDate + days73;
 let days73Ahead = new Date(searchDate);
 console.log(days73Ahead);
 
+
 // Задание 10
-Написать функцию, которая на вход принимает дату, а возвращает ее отображение в виде:
-Дата: <число> <месяц на русском> <год> - это <день недели на русском>.
-Время: <часы>:<минуты>:<секунды>
-Время, которое будет выведено, также хранится в объекте Date. 1 Февраль 2023 "это"
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-let myDate = new Date();
-let fullDate = "Сегодня: " + myDate.getDate() + // getDate возвращает число
-" " + months[myDate.getMonth()] + // getMonth возвращает номер месяца, который мы можем использовать в качестве индекса для массива months
-" " + myDate.getFullYear() + // getFullYear возвращает год
-", " + days[myDate.getDay()]; // getDay возвращает номер дня недели, который мы используем в качестве индекса для массива days
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-console.log(fullDate); // Сегодня: 1 Февраль 2023, Среда
+let myDate = new Date();
+let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " это" + " " + days[myDate.getDay()];
+
+console.log(fullDate)
