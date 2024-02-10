@@ -21,6 +21,8 @@
     .parametres-tablet-remember {
         max-width: 350px;
         padding-top: 180px;
+        display: flex;
+        justify-content: center;
     }
 
     .seasons {
@@ -77,11 +79,15 @@
     .parametres-tablet {
         max-width: 300px;
         padding-top: 120px;
+        display: flex;
+        justify-content: center;
     }
 
     .parametres-tablet-remember {
         max-width: 300px;
         padding-top: 120px;
+        display: flex;
+        justify-content: center;
     }
 
     .riddle-game__link {
@@ -196,6 +202,8 @@
 
     .seasons__image {
         padding-left: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .remember {
@@ -232,6 +240,8 @@
 
     .remember__image-reverse {
         padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
     }
 
     .remember__title {
@@ -244,6 +254,8 @@
         // padding-left: 8px;
         // max-width: 320px;
         padding-top: 5px;
+        display: flex;
+        justify-content: center;
     }
 
     .parametres-tablet-remember {
@@ -252,6 +264,8 @@
         /* max-width: 320px; */
         padding-top: 5px;
         max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .riddle-game__title {

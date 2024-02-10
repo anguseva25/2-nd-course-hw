@@ -391,6 +391,8 @@ body {
   .parametres-tablet-remember {
     max-width: 350px;
     padding-top: 180px;
+    display: flex;
+    justify-content: center;
   }
   .seasons__heading__description {
     font-size: 14px;
@@ -435,10 +437,14 @@ body {
   .parametres-tablet {
     max-width: 300px;
     padding-top: 120px;
+    display: flex;
+    justify-content: center;
   }
   .parametres-tablet-remember {
     max-width: 300px;
     padding-top: 120px;
+    display: flex;
+    justify-content: center;
   }
   .riddle-game__link {
     margin-left: 250px;
@@ -527,6 +533,8 @@ body {
   }
   .seasons__image {
     padding-left: 30px;
+    display: flex;
+    justify-content: center;
   }
   .remember {
     flex-direction: column-reverse;
@@ -557,6 +565,8 @@ body {
   }
   .remember__image-reverse {
     padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
   }
   .remember__title {
     font-size: 36px;
@@ -565,6 +575,8 @@ body {
   .parametres-tablet {
     max-height: 360px;
     padding-top: 5px;
+    display: flex;
+    justify-content: center;
   }
   .parametres-tablet-remember {
     max-height: 360px;
@@ -572,6 +584,8 @@ body {
     /* max-width: 320px; */
     padding-top: 5px;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .riddle-game__title {
     font-size: 38px;
