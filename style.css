@@ -500,7 +500,7 @@ body {
     flex-direction: column;
   }
   .heading__link {
-    margin-left: 45px;
+    margin-left: 55px;
   }
   .select-game__choice1 {
     width: 86%;
@@ -532,7 +532,7 @@ body {
     padding-left: 20px;
   }
   .seasons__image {
-    padding-left: 30px;
+    padding-left: 25px;
     display: flex;
     justify-content: center;
   }
@@ -540,9 +540,10 @@ body {
     flex-direction: column-reverse;
     margin-top: 400px;
     justify-content: flex-start;
+    max-height: 400px;
   }
   .remember__description-remember {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .remember__heading__desc-mob {
     color: #FFF;
@@ -604,5 +605,8 @@ body {
   }
   .riddle-game__link {
     margin-left: 57px;
+  }
+  .riddle-game {
+    max-height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

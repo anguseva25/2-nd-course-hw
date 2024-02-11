@@ -109,8 +109,9 @@ console.log(days73Ahead);
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-
+var d = new Date();
+var n = d.toLocaleTimeString();
 let myDate = new Date();
-let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " это" + " " + days[myDate.getDay()];
+let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " это" + " " + days[myDate.getDay()] + " текущее время " + d.toLocaleTimeString();
 
 console.log(fullDate)

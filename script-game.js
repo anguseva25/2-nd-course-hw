@@ -15,6 +15,7 @@ function guessSeason() {
 // Игра 2
 function rememberWords() {
     let wordsArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    alert('Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин')
     wordsArr = wordsArr.sort(() => Math.random() - 0.5);
     const answerUser1 = String(prompt('Чему равнялся первый элемент массива?'));
     const answer1 = alert(words[0]);
