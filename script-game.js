@@ -15,21 +15,21 @@ function guessSeason() {
 // Игра 2
 function rememberWords() {
     let wordsArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    alert('Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин')
     wordsArr = wordsArr.sort(() => Math.random() - 0.5);
-    const answerUser1 = String(prompt('Чему равнялся первый элемент массива?'));
-    const answer1 = alert(words[0]);
-    const answerUser2 = String(prompt('Чему равнялся последний элемент массива?'));
-    const answer2 = alert(words[6]);
-        if (answerUser1.toLowerCase() === answer1.toLowerCase() && answerUser2.toLowerCase() === answer2.toLowerCase()) {
-            alert('Поздравляем! У вас отличная память!');
-         } else {
-                if (answerUser1.toLowerCase() !== answer1.toLowerCase() || answerUser2.toLowerCase() !== answer2.toLowerCase()) {
-                alert('Вы были близки к победе!');
-                    } else {
-                    alert(`Вы ответили неверно, попробуйте еще раз пройти игру`);
-                    }
-                }
+    alert(wordsArr);
+    let answerUser1 = String(prompt('Чему равнялся первый элемент массива?'));
+    let answer1 = wordsArr[0];
+    let answerUser2 = String(prompt('Чему равнялся последний элемент массива?'));
+    let answer2 = wordsArr[6];
+    if (answerUser1.toLowerCase() === answer1.toLowerCase() && answerUser2.toLowerCase() === answer2.toLowerCase()) {
+        alert('Поздравляем! У вас отличная память!');
+    } else {
+        if (answerUser1.toLowerCase() === answer1.toLowerCase() || answerUser2.toLowerCase() === answer2.toLowerCase()) {
+            alert('Вы были близки к победе!');
+        } else {
+            alert(`Вы ответили неверно, попробуйте еще раз пройти игру`);
+        }
+    }
 }
 
 // Игра 3

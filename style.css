@@ -178,13 +178,11 @@ body {
 .seasons {
   background: #000915;
   display: flex;
-  height: 800px;
+  height: 320px;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 .seasons__description-seasons {
-  max-width: 584px;
-  width: 100%;
-  padding-right: 190px;
-  padding-top: 242px;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -209,14 +207,6 @@ body {
 .seasons__heading__desc-mob {
   display: none;
 }
-.seasons__image {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 .remember {
   background: #000915;
   display: flex;
@@ -457,6 +447,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .header {
+    height: 735px;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -494,10 +487,12 @@ body {
   }
   .seasons {
     flex-direction: column;
+    height: 540px;
   }
   .select-game {
     display: flex;
     flex-direction: column;
+    padding-bottom: 128px;
   }
   .heading__link {
     margin-left: 55px;
@@ -518,6 +513,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 0px;
   }
   .seasons__heading__description {
     display: none;
@@ -529,7 +525,7 @@ body {
     font-weight: 200;
     line-height: 18px;
     display: flex;
-    padding-left: 20px;
+    justify-content: center;
   }
   .seasons__image {
     padding-left: 25px;
@@ -543,7 +539,7 @@ body {
     max-height: 400px;
   }
   .remember__description-remember {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .remember__heading__desc-mob {
     color: #FFF;
@@ -553,6 +549,8 @@ body {
     line-height: 14px;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .remember__heading__description {
     color: #FFF;
@@ -568,10 +566,11 @@ body {
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .remember__title {
     font-size: 36px;
-    padding-left: 10px;
+    text-align: center;
   }
   .parametres-tablet {
     max-height: 360px;
@@ -580,11 +579,9 @@ body {
     justify-content: center;
   }
   .parametres-tablet-remember {
-    max-height: 360px;
     /* padding-left: 8px; */
     /* max-width: 320px; */
     padding-top: 5px;
-    max-width: 100%;
     display: flex;
     justify-content: center;
   }

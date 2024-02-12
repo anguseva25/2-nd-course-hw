@@ -14,8 +14,8 @@ console.log(newString1 = smile.toLowerCase());
 // Задание 2 >>>>>>>>>>>>
 // const searchStart = ([]; String())
 
-const searchStart = (words, prefix ) => {
-return words.filter(word => word.toLowerCase().includes(prefix.toLowerCase()))
+const searchStart = (words, prefix) => {
+    return words.filter(word => word.toLowerCase().includes(prefix.toLowerCase()))
 }
 
 searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
@@ -71,8 +71,8 @@ const getRandomArrNumbers = (randomNumbers) => {
     const arrayN = [];
     for (let i = 0; i < Math.floor(randomNumbers / 2); i++) {
         arrayN.push(Math.round(Math.random() * randomNumbers));
-}
-return arrayN;
+    }
+    return arrayN;
 }
 getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами
 // от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего (!) меньшего
