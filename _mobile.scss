@@ -3,195 +3,282 @@
         padding-left: calc(50% - 786px/2);
         padding-right: calc(50% - 786px/2);
     }
+
+    .riddle-game__link {
+        max-width: 234px;
+        margin-top: 44px;
+        border-radius: 30px;
+        background: #9C0332;
+        transition: all 0.5s;
+        margin-left: 285px;
+    }
+
+    .parametres-tablet {
+        max-width: 350px;
+        padding-top: 180px;
+    }
+
+    .seasons {
+        &__heading__description {
+            font-size: 14px;
+        }
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+
+    .select-game {
+        /* height: 556px; */
+        background: #000915;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seasons__heading__description {
+        font-size: 14px;
+    }
+
+    .seasons__caption {
+        color: #FFF;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        padding-top: 80px;
+        margin-bottom: 32px;
+    }
+
+    .seasons__description-seasons {
+        max-width: 584px;
+        width: 100%;
+        // padding-right: 90px;
+        // padding-top: 242px;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+    }
+
+    .remember__heading__desc-mob {
+        display: none;
+    }
+
+    .parametres-tablet {
+        max-width: 300px;
+        padding-top: 120px;
+    }
+
+    .riddle-game__link {
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+
     .center {
         padding-left: 16px;
         padding-right: 16px;
     }
 
-    .heading {
+    .heading__main-title {
         display: flex;
         flex-direction: column;
-
-        &__header {
-            padding-top: 238px;
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-
-        }
-
-        &__main-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: #FFF;
-            font-size: 32px;
-            font-weight: 700;
-            padding-bottom: 32px;
-            max-width: 342px;
-            text-align: center;
-        }
-
-        &__description {
-            color: #FFF;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 22px;
-            text-align: center;
-            display: none;
-        }
-
-        &__description-mob {
-            color: #FFF;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 22px;
-            text-align: center;
-        }
-
-        &__link {
-            max-width: 232px;
-            margin-top: 32px;
-            border-radius: 30px;
-            background: #9C0332;
-            transition: all 0.5s;
-            // display: flex;
-            // align-items: center;
-            padding-left: 70px;
-            padding-right: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .heading__link:hover {
-            transform: scale(1.02);
-            background-color: #191970;
-            border-radius: 30px;
-        }
-
-        &__menu_mobile {
-            display: flex;
-        }
-    }
-
-    .heading__link-start {
-        display: flex;
-        color: #FFF;
         justify-content: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        height: 36px;
-        text-decoration: none;
-        padding-top: 12px;
-        font-family: inherit;
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 28px;
+        max-width: 750px;
+        text-align: center;
     }
 
-    footer {
-        padding-top: 440px;
+    .heading__header center {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heading__description {
+        display: none;
+    }
+
+    .heading__menu_mobile {
+        display: flex;
+    }
+
+    .heading__description-mob {
+        text-align: center;
+        color: #FFF;
+        margin-left: 20px;
+        // margin-left: 36px;
+    }
+
+    // .remember__heading__description {
+    //     font-size: 14px;
+    // }
+
+    .heading {
+        padding-bottom: 80px;
+    }
+
+    .seasons {
+        flex-direction: column;
     }
 
     .select-game {
-        height: 1220px;
-        background: #000915;
+        display: flex;
         flex-direction: column;
-        gap: 32px;
-        padding-left: 16px;
-        transition: all 0.8s;
+    }
 
-        &:hover {
-            transform: scale(1.03);
-        }
+    .heading__link {
+        margin-left: 45px;
+    }
 
-        &__choice1 {
-            max-width: 342px;
-            display: flex;
-            flex-direction: row;
-            row-gap: 32px;
-            height: 300px;
-            border-radius: 16px;
-            background-image: url(img/game1.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            transition: all 0.8s;
-            box-shadow: #FFF;
-            align-items: flex-end;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-            color: #FFF;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            padding-left: 20px;
-        }
+    .select-game__choice1 {
+        width: 86%;
+        height: 94%;
+    }
 
-        .select-game__choice1:hover {
-            transform: scale(1.03);
-        }
+    .select-game__choice2 {
+        width: 86%;
+        height: 94%;
+    }
 
+    .select-game__choice3 {
+        width: 86%;
+        height: 94%;
+    }
 
-        &__choice2 {
-            display: flex;
-            flex-direction: row;
-            row-gap: 32px;
-            height: 300px;
-            max-width: 342px;
-            border-radius: 16px;
-            background-image: url(img/game2.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            transition: all 0.8s;
-            box-shadow: #FFF;
-            align-items: flex-end;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-            color: #FFF;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            padding-left: 20px;
-        }
-
-        .select-game__choice2:hover {
-            transform: scale(1.03);
-        }
-
-
-        &__choice3 {
-            display: flex;
-            flex-direction: row;
-            row-gap: 32px;
-            max-width: 342px;
-            height: 300px;
-            border-radius: 16px;
-            background-image: url(img/game3.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            transition: all 0.8s;
-            box-shadow: #FFF;
-            align-items: flex-end;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-            color: #FFF;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            padding-left: 20px;
-        }
-
-        .select-game__choice3:hover {
-            transform: scale(1.03);
-        }
+    .seasons__description-seasons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
     }
+
+    .seasons__heading__description {
+        display: none;
+    }
+
+    .seasons__heading__desc-mob {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 18px;
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .seasons__image {
+        padding-left: 30px;
+    }
+
+    .remember {
+        flex-direction: column-reverse;
+        margin-top: 400px;
+        justify-content: flex-start;
+    }
+
+    .remember__description-remember {
+        padding-left: 28px;
+    }
+
+    .remember__heading__desc-mob {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 18px;
+        display: flex;
+        // padding-left: 20px;
+        text-align: center;
+    }
+
+    .remember__heading__description {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 18px;
+        display: flex;
+        padding-left: 20px;
+        display: none;
+    }
+
+    .remember__image-reverse {
+        padding-bottom: 100px;
+    }
+
+    .remember__title {
+        font-size: 36px;
+    }
+
+    .parametres-tablet {
+        max-height: 360px;
+        padding-left: 8px;
+        max-width: 320px;
+        padding-top: 5px;
+    }
+
+    .riddle-game__title {
+        font-size: 38px;
+    }
+
+    .riddle-game__description {
+        display: none;
+    }
+
+    .riddle-game__heading__desc-mob {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 18px;
+        display: flex;
+        // padding-left: 20px;
+        text-align: center;
+    }
+
+    .riddle-game__link {
+        margin-left: 57px;
 }
+}
+
+// @media (max-width: 374px) {
+
+//     .center {
+//         padding-left: 16px;
+//         padding-right: 16px;
+//     }
+
+//     .seasons__heading__description{
+//         display: none;
+//     }
+
+//     .seasons__heading__desc-mob{
+//         color: #FFF;
+//         font-size: 18px;
+//         font-style: normal;
+//         font-weight: 300;
+//         line-height: 32px;
+//     }
+
+//     .big-text{
+//         display: none;
+//     }
+// }
