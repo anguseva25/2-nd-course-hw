@@ -28,6 +28,7 @@ body {
 .heading {
   display: flex;
   flex-direction: column;
+  height: 1024;
 }
 .heading__header {
   padding-top: 218px;
@@ -67,8 +68,8 @@ body {
 }
 
 .heading__link-start {
-  display: flex;
-  color: #FFF;
+  width: 234px;
+  border-radius: 30px;
   justify-content: center;
   font-size: 18px;
   font-style: normal;
@@ -76,12 +77,14 @@ body {
   line-height: normal;
   height: 36px;
   text-decoration: none;
-  padding-top: 12px;
+  padding-top: 5px;
   font-family: inherit;
+  display: flex;
+  background-color: #9C0332;
+  color: #FFF;
 }
 
-.section-choice {
-  padding-top: 440px;
+.choice {
   border: transparent;
 }
 
@@ -175,13 +178,11 @@ body {
 .seasons {
   background: #000915;
   display: flex;
-  height: 800px;
+  height: 320px;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 .seasons__description-seasons {
-  max-width: 584px;
-  width: 100%;
-  padding-right: 190px;
-  padding-top: 242px;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -205,13 +206,6 @@ body {
 }
 .seasons__heading__desc-mob {
   display: none;
-}
-.seasons__image {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .remember {
@@ -322,6 +316,9 @@ body {
 }
 
 .riddle-game__link-start {
+  width: 234px;
+  background: #9C0332;
+  border-radius: 30px;
   display: flex;
   color: #FFF;
   justify-content: center;
@@ -331,7 +328,7 @@ body {
   line-height: normal;
   height: 36px;
   text-decoration: none;
-  padding-top: 12px;
+  padding-top: 5px;
   font-family: inherit;
 }
 .riddle-game__link-start__link-start:hover {
@@ -351,6 +348,20 @@ body {
   display: flex;
 }
 
+.parametres-tablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.parametres-tablet-remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 @media (max-width: 1439px) {
   .center {
     padding-left: calc(50% - 393px);
@@ -367,6 +378,12 @@ body {
   .parametres-tablet {
     max-width: 350px;
     padding-top: 180px;
+  }
+  .parametres-tablet-remember {
+    max-width: 350px;
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;
   }
   .seasons__heading__description {
     font-size: 14px;
@@ -411,6 +428,14 @@ body {
   .parametres-tablet {
     max-width: 300px;
     padding-top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .parametres-tablet-remember {
+    max-width: 300px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
   }
   .riddle-game__link {
     margin-left: 250px;
@@ -423,6 +448,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .header {
+    height: 735px;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -460,13 +488,15 @@ body {
   }
   .seasons {
     flex-direction: column;
+    height: 540px;
   }
   .select-game {
     display: flex;
     flex-direction: column;
+    padding-bottom: 128px;
   }
   .heading__link {
-    margin-left: 45px;
+    margin-left: 55px;
   }
   .select-game__choice1 {
     width: 86%;
@@ -484,6 +514,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 0px;
   }
   .seasons__heading__description {
     display: none;
@@ -495,27 +526,32 @@ body {
     font-weight: 200;
     line-height: 18px;
     display: flex;
-    padding-left: 20px;
+    justify-content: center;
   }
   .seasons__image {
-    padding-left: 30px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
   }
   .remember {
     flex-direction: column-reverse;
     margin-top: 400px;
     justify-content: flex-start;
+    max-height: 400px;
   }
   .remember__description-remember {
-    padding-left: 28px;
+    padding-left: 0px;
   }
   .remember__heading__desc-mob {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 200;
-    line-height: 18px;
+    line-height: 14px;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .remember__heading__description {
     color: #FFF;
@@ -529,15 +565,26 @@ body {
   }
   .remember__image-reverse {
     padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .remember__title {
     font-size: 36px;
+    text-align: center;
   }
   .parametres-tablet {
     max-height: 360px;
-    padding-left: 8px;
-    max-width: 320px;
     padding-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .parametres-tablet-remember {
+    /* padding-left: 8px; */
+    /* max-width: 320px; */
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
   }
   .riddle-game__title {
     font-size: 38px;
@@ -556,5 +603,8 @@ body {
   }
   .riddle-game__link {
     margin-left: 57px;
+  }
+  .riddle-game {
+    max-height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

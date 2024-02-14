@@ -29,6 +29,7 @@ body {
 .heading {
     display: flex;
     flex-direction: column;
+    height: 1024;
 
     &__header {
         padding-top: 218px;
@@ -75,8 +76,8 @@ body {
 }
 
 .heading__link-start {
-    display: flex;
-    color: #FFF;
+    width: 234px;
+    border-radius: 30px;
     justify-content: center;
     font-size: 18px;
     font-style: normal;
@@ -84,12 +85,15 @@ body {
     line-height: normal;
     height: 36px;
     text-decoration: none;
-    padding-top: 12px;
+    padding-top: 5px;
     font-family: inherit;
+    display: flex;
+    background-color: #9C0332;
+    color: #FFF;
 }
 
-.section-choice {
-    padding-top: 440px;
+.choice {
+    // padding-top: 440px;
     border: transparent;
 }
 
@@ -195,13 +199,16 @@ body {
 .seasons {
     background: #000915;
     display: flex;
-    height: 800px;
+    // height: 800px;
+    height: 320px;
+    justify-content: space-between;
+    padding-top: 80px;
 
     &__description-seasons {
-        max-width: 584px;
-        width: 100%;
-        padding-right: 190px;
-        padding-top: 242px;
+        // max-width: 584px;
+        // width: 100%;
+        // padding-right: 190px;
+        // padding-top: 242px;
         font-size: 44px;
         font-style: normal;
         font-weight: 700;
@@ -230,13 +237,13 @@ body {
         display: none;
     }
 
-    &__image {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
+    // &__image {
+    //     // display: flex;
+    //     // width: 100%;
+    //     // flex-direction: column;
+    //     // justify-content: center;
+    //     // align-items: flex-start;
+    // }
 }
 
 .remember {
@@ -358,6 +365,9 @@ body {
 }
 
 .riddle-game__link-start {
+    width: 234px;
+    background: #9C0332;
+    border-radius: 30px;
     display: flex;
     color: #FFF;
     justify-content: center;
@@ -367,7 +377,7 @@ body {
     line-height: normal;
     height: 36px;
     text-decoration: none;
-    padding-top: 12px;
+    padding-top: 5px;
     font-family: inherit;
 
     &__link-start:hover {
@@ -387,6 +397,20 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.parametres-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parametres-tablet-remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 @import 'mobile';
