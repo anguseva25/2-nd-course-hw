@@ -199,13 +199,16 @@ body {
 .seasons {
     background: #000915;
     display: flex;
-    height: 800px;
+    // height: 800px;
+    height: 320px;
+    justify-content: space-between;
+    padding-top: 80px;
 
     &__description-seasons {
-        max-width: 584px;
-        width: 100%;
-        padding-right: 190px;
-        padding-top: 242px;
+        // max-width: 584px;
+        // width: 100%;
+        // padding-right: 190px;
+        // padding-top: 242px;
         font-size: 44px;
         font-style: normal;
         font-weight: 700;
@@ -234,13 +237,13 @@ body {
         display: none;
     }
 
-    &__image {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
+    // &__image {
+    //     // display: flex;
+    //     // width: 100%;
+    //     // flex-direction: column;
+    //     // justify-content: center;
+    //     // align-items: flex-start;
+    // }
 }
 
 .remember {
@@ -396,14 +399,14 @@ body {
     display: flex;
 }
 
-.parametres-tablet{
+.parametres-tablet {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.parametres-tablet-remember{
+.parametres-tablet-remember {
     display: flex;
     justify-content: center;
     align-items: center;
