@@ -1,10 +1,10 @@
 // Игра 1
-function guessSeason(){
+function guessSeason() {
     const monthNumber = Number(prompt('Введите число от 1 до 12, и я назову время года'))
     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
         alert('Это зима');
     } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
-        alert ('Это весна');
+        alert('Это весна');
     } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
         alert('Это лето');
     } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
@@ -14,12 +14,23 @@ function guessSeason(){
 
 // Игра 2
 function rememberWords() {
-    confirm(`Запомните слова: "письмо", "шуфлятка", "одеколон", "цветы", "радиатор", "корги", "сапоги"`);
-    let r = String(prompt('Введите пятое слово'))
-    alert ((r === 'радиатор' || r === 'Радиатор') ? 'хорошая память! Ты молодец!' : "Похоже что слово не запомнилось")
+    let wordsArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    wordsArr = wordsArr.sort(() => Math.random() - 0.5);
+    alert(wordsArr);
+    let answerUser1 = String(prompt('Чему равнялся первый элемент массива?'));
+    let answer1 = wordsArr[0];
+    let answerUser2 = String(prompt('Чему равнялся последний элемент массива?'));
+    let answer2 = wordsArr[6];
+    if (answerUser1.toLowerCase() === answer1.toLowerCase() && answerUser2.toLowerCase() === answer2.toLowerCase()) {
+        alert('Поздравляем! У вас отличная память!');
+    } else {
+        if (answerUser1.toLowerCase() === answer1.toLowerCase() || answerUser2.toLowerCase() === answer2.toLowerCase()) {
+            alert('Вы были близки к победе!');
+        } else {
+            alert(`Вы ответили неверно, попробуйте еще раз пройти игру`);
+        }
+    }
 }
-//alert('Правильный ответ "радиатор". Спасибо за игру');
-
 
 // Игра 3
 
@@ -37,7 +48,7 @@ function rememberWords() {
 function riddle(question, answer) {
     let answerUser = prompt(question);
 
-    if (answerUser === answer){
+    if (answerUser === answer) {
         alert('угадал!');
     } else {
         alert('не угадал');
@@ -45,8 +56,8 @@ function riddle(question, answer) {
 }
 
 //                       Вариант 3
-function riddle2(){
-    riddle ('Что посмотреть с закрытыми глазами?', 'сон');
-    riddle ('Куда я, туда и она', 'тень');
+function riddle2() {
+    riddle('Что посмотреть с закрытыми глазами?', 'сон');
+    riddle('Куда я, туда и она', 'тень');
 }
 
