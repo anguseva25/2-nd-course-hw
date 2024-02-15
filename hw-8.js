@@ -9,17 +9,18 @@ const people = [
 const persons = console.log(people.sort((x, y) => x.age - y.age));
 
 // Задание 2
-function isPositive(number) {
-    return number > 0;
+function isPositive(Number) {
+    return Number > 0;
 }
-function isMale() {
-    // писать код тут
+
+function isMale(String) {
+    return person.gender === 'male'
 }
-function filter(array, type) {
+function filter(array, functionRule) {
     const myResult = [];
     for (let i = 0; i < array.lenght; i++) {
-        if (let) {
-
+        if (functionRule(array[i])) {
+            myResult.push(array[i])
         }
     }
 }
@@ -37,5 +38,12 @@ console.log(filter(people, isMale)); // Должен выводить [{name: '�
 // Задание 3
 
 // Задание 4
+let myCurrentDate = new Date();
+console.log(myCurrentDate);
+
+const intervalId = setInterval(function () {
+    for (let k = 0; k < 30; k++)
+        console.log(myCurrentDate)
+}, 3000)
 
 // Задание 5
