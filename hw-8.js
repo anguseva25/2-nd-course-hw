@@ -9,25 +9,30 @@ const people = [
 const persons = console.log(people.sort((x, y) => x.age - y.age));
 
 // Задание 2
-function isPositive(Number) {
-    return Number > 0;
+function isPositive(number) {
+    return number > 0 ? true : false;
 }
 
-function isMale(String) {
-    return person.gender === 'male'
+function isMale(string) {
+    return string.gender === 'male' ? true : false;
 }
-function filter(array, functionRule) {
-    const myResult = [];
-    for (let i = 0; i < array.lenght; i++) {
-        if (functionRule(array[i])) {
-            myResult.push(array[i])
-        }
+
+function isFemale(string) {
+    return string.gender === 'female' ? true : false;
+}
+
+function filter(array, callback) {
+    const result = [];
+    for (let element of array) {
+        if (callback(element))
+            result.push(element)
     }
+    return result;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-const men = [
+const people = [
     { name: 'Глеб', gender: 'male' },
     { name: 'Анна', gender: 'female' },
     { name: 'Олег', gender: 'male' },
@@ -35,15 +40,45 @@ const men = [
 ];
 
 console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
-// Задание 3
+console.log(filter(people, isFemale)); // для женщин
 
-// Задание 4
+// Задание 3
 let myCurrentDate = new Date();
 console.log(myCurrentDate);
 
-const intervalId = setInterval(function () {
-    for (let k = 0; k < 30; k++)
-        console.log(myCurrentDate)
+const intervalId = setInterval(() => {
+    console.log(new Date())
 }, 3000)
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log('Прошло 30 секунд');
+}, 30000);
+
+
+// Задание 4
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+})
 
 // Задание 5
+function newDelayForSecond(callback) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (callback) { callback(); }
+
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+newDelayForSecond(() => sayHi('Глеб'))
